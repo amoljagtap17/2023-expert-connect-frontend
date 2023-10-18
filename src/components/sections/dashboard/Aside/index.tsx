@@ -57,7 +57,7 @@ export function Aside() {
         <ListSubheader>Connect for Issues</ListSubheader>
         <ListItem>
           <Link
-            href="/dashboard/issues"
+            href="/dashboard"
             component={NextLink}
             underline="none"
             sx={{ flexGrow: 1 }}
@@ -68,9 +68,16 @@ export function Aside() {
           </Link>
         </ListItem>
         <ListItem>
-          <ListItemButton>
-            <ListItemText primary="My Issues" />
-          </ListItemButton>
+          <Link
+            href="/dashboard/issues"
+            component={NextLink}
+            underline="none"
+            sx={{ flexGrow: 1 }}
+          >
+            <ListItemButton>
+              <ListItemText primary="My Issues" />
+            </ListItemButton>
+          </Link>
         </ListItem>
         <ListItem>
           <ListItemButton>

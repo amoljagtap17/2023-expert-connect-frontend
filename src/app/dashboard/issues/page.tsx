@@ -1,3 +1,5 @@
+import { IssueList } from "@/components/sections";
+
 export default function IssuesPage() {
-  return <h1>Issues listing</h1>;
+  return <IssueList />;
 }
