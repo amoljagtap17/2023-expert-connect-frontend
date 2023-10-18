@@ -46,5 +46,10 @@ export const theme = createTheme({
         },
       },
     },
+    MuiListItem: {
+      defaultProps: {
+        disablePadding: true,
+      },
+    },
   },
 });
