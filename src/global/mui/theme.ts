@@ -14,6 +14,10 @@ export const theme = createTheme({
     primary: {
       main: grey[900],
     },
+    background: {
+      default: "#fffaf4",
+      paper: "#fffaf4",
+    },
   },
   typography: {
     fontFamily: roboto.style.fontFamily,
