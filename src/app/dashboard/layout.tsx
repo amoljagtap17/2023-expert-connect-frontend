@@ -1,7 +1,7 @@
-import { Aside } from "@/components/sections";
-import { Box } from "@mui/material";
+import { Aside, TopRatedList } from "@/components/sections";
+import { Box, Container, Stack } from "@mui/material";
 
-export const drawerWidth = 240;
+export const drawerWidth = 300;
 
 export default function DashboardLayout({
   children,
@@ -20,7 +20,12 @@ export default function DashboardLayout({
           left: { sm: `${drawerWidth}px` },
         }}
       >
-        {children}
+        <Container maxWidth="lg">
+          <Stack spacing={4}>
+            <TopRatedList />
+            <Box>{children}</Box>
+          </Stack>
+        </Container>
       </Box>
     </Box>
   );

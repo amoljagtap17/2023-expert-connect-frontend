@@ -24,7 +24,7 @@ import NextLink from "next/link";
 import { useState } from "react";
 import { HeroImage } from "..";
 
-const drawerWidth = 240;
+const drawerWidth = 300;
 
 export function Aside() {
   const [mobileOpen, setMobileOpen] = useState(false);
