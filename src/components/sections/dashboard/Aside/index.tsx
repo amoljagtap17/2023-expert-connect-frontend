@@ -6,6 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import {
   AppBar,
   Box,
+  Button,
   CssBaseline,
   Divider,
   Drawer,
@@ -53,7 +54,7 @@ export function Aside() {
         />
       </Box>
       <Divider />
-      <List>
+      <List sx={{ textAlign: "center" }}>
         <ListSubheader>Connect for Issues</ListSubheader>
         <ListItem>
           <Link
@@ -63,7 +64,7 @@ export function Aside() {
             sx={{ flexGrow: 1 }}
           >
             <ListItemButton>
-              <ListItemText primary="All Issues" />
+              <ListItemText primary="All Issues" sx={{ textAlign: "center" }} />
             </ListItemButton>
           </Link>
         </ListItem>
@@ -75,14 +76,12 @@ export function Aside() {
             sx={{ flexGrow: 1 }}
           >
             <ListItemButton>
-              <ListItemText primary="My Issues" />
+              <ListItemText primary="My Issues" sx={{ textAlign: "center" }} />
             </ListItemButton>
           </Link>
         </ListItem>
-        <ListItem>
-          <ListItemButton>
-            <ListItemText primary="Create Issue" />
-          </ListItemButton>
+        <ListItem sx={{ display: "flex", justifyContent: "center" }}>
+          <Button variant="contained">Create Issue</Button>
         </ListItem>
       </List>
       <Divider />

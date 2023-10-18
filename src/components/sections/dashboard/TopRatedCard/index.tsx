@@ -11,7 +11,7 @@ import {
 
 export function TopRatedCard() {
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" sx={{ padding: 2 }}>
       <CardMedia
         sx={{ height: 250 }}
         image="/images/top-rated-card-img.jpg"

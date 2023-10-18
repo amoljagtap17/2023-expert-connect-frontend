@@ -13,7 +13,7 @@ import {
 
 export function IssueCard() {
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" sx={{ padding: 2 }}>
       <CardHeader
         title="something went wrong!"
         subheader="John Doe"
