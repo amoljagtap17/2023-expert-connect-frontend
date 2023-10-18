@@ -16,11 +16,13 @@ import {
   ListItemButton,
   ListItemText,
   ListSubheader,
+  Rating,
   Toolbar,
   Typography,
 } from "@mui/material";
 import NextLink from "next/link";
 import { useState } from "react";
+import { HeroImage } from "..";
 
 const drawerWidth = 240;
 
@@ -33,7 +35,23 @@ export function Aside() {
 
   const drawer = (
     <div>
-      <>Heo Image</>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          p: 4,
+        }}
+      >
+        <HeroImage />
+        <Rating
+          name="rating"
+          value={4}
+          readOnly
+          sx={{ marginTop: 4, fontSize: 40 }}
+        />
+      </Box>
       <Divider />
       <List>
         <ListSubheader>Connect for Issues</ListSubheader>
